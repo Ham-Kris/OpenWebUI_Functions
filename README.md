@@ -75,6 +75,7 @@ Assistant:
 源码概览
 
 文件：ragflow_deepseek_cot_optimizer.py
+
 	•	Pipe.Valves 负责 API 连接参数
 	•	pipe() 负责流式转写及错误处理
 	•	_transform_chunk() 为核心转换器
@@ -87,9 +88,10 @@ Assistant:
 # 1. 访问 GitHub 仓库或 Open WebUI 官网，将代码复制、克隆到Open WebUI
 
 LaTeX Display Optimization [官网](https://openwebui.com/f/krisham/latex_display_optimization)
-RagFlow DeepSeek CoT Optimizer [官网]（https://openwebui.com/f/krisham/ragflow_deepseek_cot_optimizer）
+RagFlow DeepSeek CoT Optimizer [官网](https://openwebui.com/f/krisham/ragflow_deepseek_cot_optimizer)
 
 # 2. 在 WebUI → Admin Settings › Functions 中：
+
 	•	勾选 Enabled 开关
 	•	点击 Configure 调整 Valve 字段
 
@@ -109,6 +111,7 @@ API_MODEL: "deepseek-reasoner"
 ⸻
 
 贡献须知
+
 	•	Issue 前先检索历史，避免重复。
 	•	PR 需通过 flake8、mypy；如影响文档，请同步修改多语言版本。
 	•	欢迎提交更多正则模式、兼容其他 CoT 标记或主题样式。
