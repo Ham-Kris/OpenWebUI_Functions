@@ -87,8 +87,9 @@ Assistant:
 
 ### 1. 访问 GitHub 仓库或 Open WebUI 官网，将代码复制、克隆到Open WebUI
 
-LaTeX Display Optimization [官网](https://openwebui.com/f/krisham/latex_display_optimization)
-RagFlow DeepSeek CoT Optimizer [官网](https://openwebui.com/f/krisham/ragflow_deepseek_cot_optimizer)
+[LaTeX Display Optimization](latex-display-optimization.py) [官网](https://openwebui.com/f/krisham/latex_display_optimization)
+
+[RagFlow DeepSeek CoT Optimizer](ragflow-deepseek-cot-optimizer.py) [官网](https://openwebui.com/f/krisham/ragflow_deepseek_cot_optimizer)
 
 ### 2. 在 WebUI → Admin Settings › Functions 中：
 
