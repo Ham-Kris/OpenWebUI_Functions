@@ -85,12 +85,12 @@ Assistant:
 
 安装与启用
 
-# 1. 访问 GitHub 仓库或 Open WebUI 官网，将代码复制、克隆到Open WebUI
+### 1. 访问 GitHub 仓库或 Open WebUI 官网，将代码复制、克隆到Open WebUI
 
 LaTeX Display Optimization [官网](https://openwebui.com/f/krisham/latex_display_optimization)
 RagFlow DeepSeek CoT Optimizer [官网](https://openwebui.com/f/krisham/ragflow_deepseek_cot_optimizer)
 
-# 2. 在 WebUI → Admin Settings › Functions 中：
+### 2. 在 WebUI → Admin Settings › Functions 中：
 
 	•	勾选 Enabled 开关
 	•	点击 Configure 调整 Valve 字段
@@ -99,10 +99,10 @@ RagFlow DeepSeek CoT Optimizer [官网](https://openwebui.com/f/krisham/ragfl
 
 配置示例
 
-# LaTeX Display Optimization
+### LaTeX Display Optimization
 enabled: true      # 全局开关
 
-# RagFlow DeepSeek CoT Optimizer
+### RagFlow DeepSeek CoT Optimizer
 API_BASE_URL: "https://api.siliconflow.com/v1"
 API_KEY: "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 API_MODEL: "deepseek-reasoner"
