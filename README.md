@@ -6,8 +6,8 @@
 
 ## 目录
 1. [功能速览](#功能速览)  
-2. [LaTeX Display Optimization (Filter)](#latex-display-optimization.py)  
-3. [RagFlow DeepSeek CoT Optimizer (Pipe)](#ragflow-deepseek-cot-optimizer.py)  
+2. [LaTeX Display Optimization (Filter)](#latex-display-optimization-filter)  
+3. [RagFlow DeepSeek CoT Optimizer (Pipe)](#ragflow-deepseek-cot-optimizer-pipe)  
 4. [安装与启用](#安装与启用)  
 5. [配置示例](#配置示例)   
 6. [贡献须知](#贡献须知)  
@@ -41,13 +41,11 @@ S[模型原始输出] --> R[正则扫描公式] --> P[插入空格] --> O[返回
 |---|---|
 |这是面积$S=\\pi r^2$的表达式|这是面积 $S=\\pi r^2$ 的表达式|
 
+---
 
+## RagFlow DeepSeek CoT Optimizer (Pipe)
 
-⸻
-
-RagFlow DeepSeek CoT Optimizer (Pipe)
-
-核心能力
+### 核心能力
 
 	1.	思维链分离
 	•	捕获流式响应中的 <think> / </think> 标签。
@@ -60,9 +58,10 @@ RagFlow DeepSeek CoT Optimizer (Pipe)
 	3.	异常兜底
 	•	流式请求异常或 JSON 解码失败时，将缓冲区全部强制处理后输出，并返回格式化错误信息。
 
-效果示例
+### 效果示例
 
 User: 请给我一个示例
+
 Assistant: 
 ```Reasoning...
 1. 查找数据库
@@ -72,7 +71,7 @@ Assistant:
 最终答案：这是示例。
 
 
-源码概览
+### 源码概览
 
 文件：ragflow_deepseek_cot_optimizer.py
 
@@ -81,9 +80,9 @@ Assistant:
 	•	_transform_chunk() 为核心转换器
 	•	其他辅助函数：状态推送、异常格式化等
 
-⸻
+---
 
-安装与启用
+## 安装与启用
 
 ### 1. 访问 GitHub 仓库或 Open WebUI 官网，将代码复制、克隆到Open WebUI
 
@@ -97,9 +96,9 @@ Assistant:
 	•	勾选 Enabled 开关
 	•	点击 Configure 调整 Valve 字段
 
-⸻
+---
 
-配置示例
+## 配置示例
 
 ### LaTeX Display Optimization
 enabled: true      # 全局开关
@@ -109,18 +108,17 @@ API_BASE_URL: "https://api.siliconflow.com/v1"
 API_KEY: "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 API_MODEL: "deepseek-reasoner"
 
+---
 
-⸻
-
-贡献须知
+## 贡献须知
 
 	•	Issue 前先检索历史，避免重复。
 	•	PR 需通过 flake8、mypy；如影响文档，请同步修改多语言版本。
 	•	欢迎提交更多正则模式、兼容其他 CoT 标记或主题样式。
 
-⸻
+---
 
-许可证
+## 许可证
 
 本仓库代码以 MIT License 发布。依赖库须遵循各自许可证。
 
